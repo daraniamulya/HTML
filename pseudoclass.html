@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo class selector</title>
+<style>
+ ul > li:nth-child(2){
+ color:violet;
+ }
+ h1:hover{
+ color:orange;
+ font-size:40px;
+ }
+ p::first-letter{
+ font-size:36px;
+ color:red
+ }
+  p::selection{ 
+  background-color:orange;
+  }
+  p::after{
+  content:url('../gifs/arrow.png')
+  }
+  [class="attribute"]{
+  background-color:red
+  }
+</style>
+</head>
+<body>
+<ul>
+ <li>First child</li>
+ <li>Second child</li>
+ <li>Third child</li>
+ <li>Fourth child</li>
+</ul>
+<h1>Hover</h1>
+<p>Hover selector is used to select elements when you mouse over them. Tip: The :hover selector can be used on all elements, not only on links.</p>
+<h1 class="attribute">Attribute selector</h1>
+</body>
+</html>
